@@ -87,7 +87,7 @@ with right:
     random_x= np.random.randint(1, 101, 10)
     random_y= np.random.randint(1, 101, 10)
     temp = pd.DataFrame({"Digit" : np.arange(10), "Probability" : probabilities})
-    fig = px.bar(temp, x = "Digit", y = "Probability", width=400, height=400)
+    fig = px.bar(temp, x = "Digit", y = "Probability", width=400, height=400, use_container_width=True)
     fig.update_layout(
     xaxis = dict(
         tickmode = 'linear',
