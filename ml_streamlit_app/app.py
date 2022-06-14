@@ -13,10 +13,6 @@ from streamlit_drawable_canvas import st_canvas
 import torchvision
 from pathlib import Path
 
-import os
-
-st.write(os.listdir())
-
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 MODEL_PATH = Path(__file__).parents[0] / 'model_torch_MNIST_plus_CNN_98_5_streamlit.chk'
 st.write(MODEL_PATH)
