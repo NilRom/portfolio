@@ -11,9 +11,10 @@ import numpy as np
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import torchvision
+from pathlib import Path
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-MODEL_PATH = 'models/model_torch_MNIST_plus_CNN_98_5_streamlit.chk'
+MODEL_PATH = Path(__file__).parents[1] / 'models/model_torch_MNIST_plus_CNN_98_5_streamlit.chk'
 
 # Specify canvas parameters in application
 drawing_mode = "freedraw"
