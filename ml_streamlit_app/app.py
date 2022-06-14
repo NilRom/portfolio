@@ -24,7 +24,9 @@ if drawing_mode == 'point':
 stroke_color = "#eee"
 
 # Create a canvas component
-st.title('MNIST Live Classifier')
+left, middle, right = st.columns(3)
+with middle:
+    st.title('MNIST Live Classifier')
 left,right = st.columns(2)
 
 with left:
