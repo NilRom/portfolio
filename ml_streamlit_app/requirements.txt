@@ -2,4 +2,4 @@ streamlit
 streamlit-drawable-canvas
 torch
 torchvision
-opencv-python
+opencv-python-headless
