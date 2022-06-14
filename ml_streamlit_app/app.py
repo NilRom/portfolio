@@ -15,7 +15,6 @@ from pathlib import Path
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 MODEL_PATH = Path(__file__).parents[0] / 'model_torch_MNIST_plus_CNN_98_5_streamlit.chk'
-st.write(MODEL_PATH)
 # Specify canvas parameters in application
 drawing_mode = "freedraw"
 
