@@ -99,4 +99,4 @@ with right:
 
 right, middle, left = st.columns(3)
 with middle:
-    st.write('### Prediction:' + str(output)) 
+    st.write('### Prediction: ' + str(output)) 
