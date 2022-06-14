@@ -13,7 +13,7 @@ from streamlit_drawable_canvas import st_canvas
 import torchvision
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-MODEL_PATH = 'model_torch_MNIST_plus_CNN_98_5_streamlit.chk'
+MODEL_PATH = 'models/model_torch_MNIST_plus_CNN_98_5_streamlit.chk'
 
 # Specify canvas parameters in application
 drawing_mode = "freedraw"
